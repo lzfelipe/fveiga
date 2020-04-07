@@ -1,26 +1,58 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './assets/logo.svg'
 
+
+// eslint-disable-next-line
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div style={styles.mainDiv}>
+      <style jsx global>
+        {`body { margin: 0px; padding: 0px;}`}
+      </style>
+
+    <nav style={styles.navArea}>
+      <div style={styles.logoBox}>
+        {/* eslint-disable-next-line */}
+          <img src={logo}></img>
+      </div>
+
+      <div style={{display: 'flex', }}>
+        <ul style={{display: 'flex'}}>
+          {/* eslint-disable-next-line */}
+          <li><a href={'test'}>home</a></li>
+          {/* eslint-disable-next-line */}
+          <li><a>portfolio</a></li>
+          {/* eslint-disable-next-line */}
+          <li><a>resume</a></li>
+          {/* eslint-disable-next-line */}
+          <li><a>contact me</a></li>
+        </ul>
+      </div>
+
+    </nav>
     </div>
   );
 }
 
 export default App;
+
+const styles = {
+  mainDiv: {
+    backgroundColor: 'black', 
+    width: '100%', 
+    height: '100vh'
+  },
+
+  navArea: {
+    backgroundColor: 'grey', //black
+    width: '100%',
+    height: '10%',
+    display: 'flex',
+    alignItems: 'center',
+  },
+
+  logoBox: {
+    marginLeft: 50
+  }
+}
