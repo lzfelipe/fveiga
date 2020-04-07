@@ -1,36 +1,32 @@
 import React from 'react';
-import logo from './assets/logo.svg'
+
+import NavBar from './components/navBar'
+
+import { SubTitle, Title, MainButton, TitleContainer } from './styles/title'
 
 
-// eslint-disable-next-line
+
 function App() {
   return (
     
     <div style={styles.mainDiv}>
       <style jsx global>
-        {`body { margin: 0px; padding: 0px;}`}
+        {`body { margin: 0px; padding: 0px; font-family: 'Red Hat Display', sans-serif;}`}
       </style>
 
-    <nav style={styles.navArea}>
-      <div style={styles.logoBox}>
-        {/* eslint-disable-next-line */}
-          <img src={logo}></img>
+    <NavBar />
+    
+    <div style={{display: 'flex', width: '100%', justifyContent: 'center'}}>
+    <TitleContainer>
+      <Title>Hello,<br></br> I'm Felipe<span>.</span></Title>
+      <SubTitle>javascript fullstack developer &#38; digital designer </SubTitle>
+      <div>
+      <MainButton>see my projects</MainButton>
       </div>
+      
+    </TitleContainer>
+    </div>
 
-      <div style={{display: 'flex', }}>
-        <ul style={{display: 'flex'}}>
-          {/* eslint-disable-next-line */}
-          <li><a href={'test'}>home</a></li>
-          {/* eslint-disable-next-line */}
-          <li><a>portfolio</a></li>
-          {/* eslint-disable-next-line */}
-          <li><a>resume</a></li>
-          {/* eslint-disable-next-line */}
-          <li><a>contact me</a></li>
-        </ul>
-      </div>
-
-    </nav>
     </div>
   );
 }
@@ -39,20 +35,8 @@ export default App;
 
 const styles = {
   mainDiv: {
-    backgroundColor: 'black', 
+    backgroundColor: '#18161D', 
     width: '100%', 
     height: '100vh'
   },
-
-  navArea: {
-    backgroundColor: 'grey', //black
-    width: '100%',
-    height: '10%',
-    display: 'flex',
-    alignItems: 'center',
-  },
-
-  logoBox: {
-    marginLeft: 50
-  }
 }
