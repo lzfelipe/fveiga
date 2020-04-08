@@ -5,7 +5,7 @@ import behance from '../assets/social/behance.svg'
 import ig from '../assets/social/ig.svg'
 import linkedn from '../assets/social/linkedin.svg'
 
-import { NavContainer, MenuWrap, Hamburger, Menu, MenuContainer, LogoBox, IconsContainer } from '../styles/navBar';
+import { NavContainer, MenuWrap, Hamburger, Menu, MenuContainer, LogoBox, IconsContainer, DesktopMenuContainer } from '../styles/navBar';
 
 export default class components extends Component {
   render() {
@@ -51,6 +51,22 @@ export default class components extends Component {
                 </MenuContainer>
             </Menu>
         </MenuWrap>
+        {/* Menu Desktop */}
+        <DesktopMenuContainer>
+          <ul>
+            {/* eslint-disable-next-line */}
+            <li><a href="#">home</a></li>
+            {/* eslint-disable-next-line */}
+            <li><a href="#">resume</a></li>
+            {/* eslint-disable-next-line */}
+            <li><a href="#">projects</a></li>
+            {/* eslint-disable-next-line */}
+            <li><a href="#">contact me</a></li>
+            {/* eslint-disable-next-line */}
+            <li>EN_PT</li>
+          </ul>
+        </DesktopMenuContainer>
+        
       </NavContainer>
     );
   }

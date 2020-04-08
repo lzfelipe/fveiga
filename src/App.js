@@ -3,7 +3,7 @@ import React from 'react';
 import NavBar from './components/navBar'
 
 import { SubTitle, Title, MainButton, TitleContainer } from './styles/title'
-
+import { motion } from "framer-motion"
 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
 
     <NavBar />
     
+    <motion.div  animate={{y: '0vh', opacity: 1}} initial={{y: '-30vh', opacity: 0}} transition={{duration: 1.5}} >
     <div style={{display: 'flex', width: '100%', justifyContent: 'center'}}>
     <TitleContainer>
       <Title>Hello,<br></br> I'm Felipe<span>.</span></Title>
@@ -26,6 +27,7 @@ function App() {
       
     </TitleContainer>
     </div>
+    </motion.div>
 
     </div>
   );

@@ -17,6 +17,9 @@ export const LogoBox = styled.div`
     }
 `
 
+
+//Mobile Menu
+
 export const MenuContainer = styled.div`
         background: rgba(36, 34, 41, 0.97);
         border-radius: 50%;
@@ -167,4 +170,52 @@ export const IconsContainer = styled.div`
         margin-top: 20px;
         height: 30px;
     }
+`
+
+//Desktop Menu
+
+export const DesktopMenuContainer = styled.div`
+@media screen and (max-width: 1024px) {
+        display: none;
+    }
+
+    width: 100%;
+    
+    ul {
+        display: flex;
+        float: right;
+        list-style: none;
+        margin-right: 4%;
+    }
+
+    ul > li {
+        margin-left: 55px;
+        color: #fff;
+    }
+
+    ul > li > a{
+        text-decoration: none;
+        color: #fff;
+        position: relative;
+        font-size: 19px;
+    }
+    
+    ul > li > a:after {
+        content: '';
+        position: absolute;
+        width: 0; height: 3px;
+        display: block;
+        margin-top: 0px;
+        right: 0;
+        background: #C365EF;
+        transition: width .2s ease;
+        -webkit-transition: width .2s ease;
+    }
+
+    ul > li > a:hover:after {
+        width: 60%;
+        left: 0;
+        background: #C365EF;
+    }
+      
 `
