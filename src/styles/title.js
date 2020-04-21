@@ -74,6 +74,62 @@ export const MainButton = styled.button`
 
 :hover {
     background-color: #7f4d96;
+    transform: scale(1.1);
+    transition: background 0.5s, transform .2s;
     cursor: pointer;
 }
+`
+
+export const SocialIconsDesktop = styled.div`
+ @media screen and (max-width: 1024px) {
+    opacity: 0;
+    z-index: -1000
+}
+    margin-top: 2%; 
+
+    div > div > a > img {
+        padding: 4px;
+    }
+    
+    div > div > a > img:hover{
+        background: #C365EF;
+        border-radius: 40%;
+        transform: scale(1.3);
+        transition: background 0.5s, transform .4s;
+    }
+
+`
+
+
+export const KnowMeText = styled.div`
+ @media screen and (max-width: 1024px) {    
+     h2 {
+    color: #aaa;
+    font-size: 15px;
+    font-weight: 100;
+    writing-mode: vertical-rl;
+    }
+}
+    width: 100%;
+    height: 120px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+h2 {
+    color: #aaa;
+    font-size: 15px;
+    font-weight: 100;
+    writing-mode: vertical-rl;
+}
+
+h2:hover {
+    color: #C365EF;
+    font-size: 18px;
+    transition: color 0.3s, font-size .3s;
+    cursor: pointer;
+}
+
+
 `
