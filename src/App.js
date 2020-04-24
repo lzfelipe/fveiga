@@ -71,7 +71,7 @@ const styles = {
   mainDiv: {
     backgroundColor: '#18161D', 
     width: '100%', 
-    height: '100vh'
+    height: '150vh'
   },
 
   socialContainer: {

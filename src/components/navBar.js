@@ -13,7 +13,7 @@ export default class components extends Component {
       <NavContainer>
         <LogoBox>
           {/* eslint-disable-next-line */}
-          <a href="#">
+          <a href="/fveiga">
             <img src={logo} alt="logo"></img>
           </a>
         </LogoBox>
@@ -30,8 +30,7 @@ export default class components extends Component {
                     <div>
                         <img src={logoHorz} alt="logo"></img>
                         <ul>
-                            {/* eslint-disable-next-line */}
-                            <li><a href="#">home</a></li>
+                            <li><a href="/fveiga">home</a></li>
                             {/* eslint-disable-next-line */}
                             <li><a href="#">resume</a></li>
                             {/* eslint-disable-next-line */}
@@ -55,7 +54,7 @@ export default class components extends Component {
         <DesktopMenuContainer>
           <ul>
             {/* eslint-disable-next-line */}
-            <li><a href="#">home</a></li>
+            <li><a href="/fveiga">home</a></li>
             {/* eslint-disable-next-line */}
             <li><a href="#">resume</a></li>
             {/* eslint-disable-next-line */}

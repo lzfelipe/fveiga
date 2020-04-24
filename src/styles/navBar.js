@@ -1,15 +1,22 @@
 import styled from 'styled-components'
 
 export const NavContainer = styled.div`
-        background-color: #18161D;
         width: 100%;
         height: 10%;
         display: flex;
         align-items: center;
         justify-items: space-around;
+
+        @media screen and (max-width: 1024px) {
+            position: fixed;
+            z-index: 1000;
+            background-color: #18161D;  
+            border-bottom: 1px solid rgba(51, 51, 51, 1);
+        }
+        
 `
 
-export const LogoBox = styled.div`
+export const LogoBox = styled.div` 
         margin-left: 20px;
 
     @media screen and (min-width: 1024px) {
