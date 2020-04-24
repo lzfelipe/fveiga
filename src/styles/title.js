@@ -125,7 +125,7 @@ h2 {
 }
 
 h2:hover {
-    color: #C365EF;
+    color: #FFF;
     font-size: 18px;
     transition: color 0.3s, font-size .3s;
     cursor: pointer;
