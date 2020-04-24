@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/fveiga/static/js/main.e2d021f6.chunk.js",
-    "main.js.map": "/fveiga/static/js/main.e2d021f6.chunk.js.map",
+    "main.js": "/fveiga/static/js/main.a1ab4505.chunk.js",
+    "main.js.map": "/fveiga/static/js/main.a1ab4505.chunk.js.map",
     "runtime-main.js": "/fveiga/static/js/runtime-main.a04a4230.js",
     "runtime-main.js.map": "/fveiga/static/js/runtime-main.a04a4230.js.map",
     "static/js/2.ce9c2ed6.chunk.js": "/fveiga/static/js/2.ce9c2ed6.chunk.js",
     "static/js/2.ce9c2ed6.chunk.js.map": "/fveiga/static/js/2.ce9c2ed6.chunk.js.map",
     "index.html": "/fveiga/index.html",
-    "precache-manifest.30dc94e49e5fd6af52c92c31aa2f9599.js": "/fveiga/precache-manifest.30dc94e49e5fd6af52c92c31aa2f9599.js",
+    "precache-manifest.a1c6e751cc785698c401d9a752e693c7.js": "/fveiga/precache-manifest.a1c6e751cc785698c401d9a752e693c7.js",
     "service-worker.js": "/fveiga/service-worker.js",
     "static/js/2.ce9c2ed6.chunk.js.LICENSE.txt": "/fveiga/static/js/2.ce9c2ed6.chunk.js.LICENSE.txt",
     "static/media/behance.svg": "/fveiga/static/media/behance.30ead64f.svg",
@@ -19,6 +19,6 @@
   "entrypoints": [
     "static/js/runtime-main.a04a4230.js",
     "static/js/2.ce9c2ed6.chunk.js",
-    "static/js/main.e2d021f6.chunk.js"
+    "static/js/main.a1ab4505.chunk.js"
   ]
 }
