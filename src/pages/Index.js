@@ -7,11 +7,13 @@ import {
   SocialIconsDesktop,
   KnowMeText,
   Timeline,
+  TimeLineMobile
 } from "../styles/title";
 
 import behance from "../assets/social/behance.svg";
 import ig from "../assets/social/ig.svg";
 import linkedn from "../assets/social/linkedin.svg";
+import Footer from "../components/footer";
 
 class Index extends Component {
   render() {
@@ -35,12 +37,13 @@ class Index extends Component {
 
             <div style={{ width: "100%", display: "block" }}>
                 
-              <Title style={{ fontSize: 35 }}>
+              <Title style={{ fontSize: 28 }}>
                 this is my{" "}
                 <u style={{ textDecorationColor: "#C365EF" }}>
                   professional timeline
                 </u>
               </Title>
+              <a style={{color: "#FFF", textDecoration: "underline", fontSize: 14 }} href="#">Download my resume PDF</a>
             </div>
           </TitleContainer>
 
@@ -75,55 +78,146 @@ class Index extends Component {
           </SocialIconsDesktop>
         </div>
 
-        <div style={{ width: "100vw", height: 1}} id="timeline">
+        <div style={{ width: "100vw", height: 'fit-content'}} id="timeline">
+
             <Timeline>
-        <div className="timeline">
+                <div className="timeline">
 
-            <div class="entries">
-                <div class="entry">
-                    <div class="title">2014</div>
-                    <div class="body">
-                <p>Entered an IT technical course at Colégio Anchieta</p>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="title">2015</div>
-                    <div class="body">
-                    <p>Started working as a Freelancer</p>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="title">2016</div>
-                    <div class="body">
-                    <p>Finished my IT course</p>
-                    </div>
-                </div>
-                
-                <div class="entry">
-                    <div class="title">2016</div>
-                    <div class="body">
-                    <p>Started working as a Teacher/ Monitor at Eurodata (Techinical/IT Courses) </p>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="title">2017</div>
-                    <div class="body">
-                    <p>Departure from Eurodata</p>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="title big">2018</div>
-                    <div class="body">
-                    <p>Joined my bachelor’s
-                    degree in Digital Design
-                    at Anhembi Morumbi.</p>
-                    </div>
-                </div>
+                    <div class="entries">
+                        <div class="entry">
+                            <div class="title">2014</div>
+                            <div class="body">
+                        <p>Entered an IT technical course at Colégio Anchieta</p>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="title">2015</div>
+                            <div class="body">
+                            <p>Started working as a Freelancer</p>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="title">2016</div>
+                            <div class="body">
+                            <p>Finished my IT course</p>
+                            </div>
+                        </div>
+                        
+                        <div class="entry">
+                            <div class="title">2016</div>
+                            <div class="body">
+                            <p>Started working as a Teacher/Monitor at Eurodata </p>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="title">2017</div>
+                            <div class="body">
+                            <p>Departure from Eurodata</p>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="title big">2017</div>
+                            <div class="body">
+                            <p>Joined my bachelor’s
+                            degree in Digital Design
+                            at Anhembi Morumbi.</p>
+                            </div>
+                        </div>
+                        
 
-            </div>
-        </div>
+                    </div>
+                </div>
             </Timeline>
+
+            <TimeLineMobile>
+              <div className="entry"> 
+                <div className="year">
+                  <div className="circle"></div><h2>2014</h2>
+                  <span className="line"/>
+                </div>
+                <div className="text">
+                  <p>
+                    Entered an IT technical course at Colégio Anchieta
+                  </p>
+                </div>
+              </div>
+
+              <div className="entry"> 
+                <div className="year">
+                  <div className="circle"></div><h2>2015</h2>
+                  <span className="line"/>
+                </div>
+                <div className="text">
+                  <p>
+                    Started working as a Freelancer
+                  </p>
+                </div>
+              </div>
+
+              <div className="entry"> 
+                <div className="year">
+                  <div className="circle"></div><h2>2016</h2>
+                  <span className="line"/>
+                </div>
+                <div className="text">
+                  <p>
+                    Finished my IT course
+                  </p>
+                </div>
+              </div>
+
+              <div className="entry"> 
+                <div className="year">
+                  <div className="circle"></div><h2>2016</h2>
+                  <span className="line"/>
+                </div>
+                <div className="text">
+                  <p>
+                  Started working as a teacher/monitor at Eurodata
+                  </p>
+                </div>
+              </div>
+
+              <div className="entry"> 
+                <div className="year">
+                  <div className="circle"></div><h2>2017</h2>
+                  <span className="line"/>
+                </div>
+                <div className="text">
+                  <p>
+                  Departure from Eurodata
+                  </p>
+                </div>
+              </div>
+
+              <div className="entry"> 
+                <div className="year">
+                  <div className="circle"></div><h2>2017</h2>
+                  <span className="line"/>
+                </div>
+                <div className="text">
+                  <p>
+                  Joined my bachelor’s degree in Digital Design at Anhembi Morumbi.
+                  </p>
+                </div>
+              </div>
+
+              <div className="entry"> 
+                <div className="year">
+                  <div className="circle"></div><h2>2021</h2>
+                </div>
+                <div className="text">
+                  <p>
+                  Finished my bachelor’s degree in Digital Design.
+                  </p>
+                </div>
+              </div>
+            </TimeLineMobile>
+
+
         </div>
+        
+        <Footer />
       </div>
     );
   }
@@ -133,7 +227,7 @@ class Index extends Component {
 const styles = {
   socialContainer: {
     display: "flex",
-    height: "80%",
+    height: "30%",
     position: "absolute",
     width: "15%",
     alignItems: "center",

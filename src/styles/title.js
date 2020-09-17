@@ -216,6 +216,8 @@ height: fit-content;
 .timeline .entries .entry .body p {
   line-height: 1.4em;
 }
+
+
 .timeline .entries .entry:nth-child(2n) {
   text-align: left;
   float: right;
@@ -227,5 +229,87 @@ height: fit-content;
   -webkit-transform: translate(-8px, -50%);
           transform: translate(-8px, -50%);
 }
+
+
+@media only screen 
+  and (max-width: 1024px)  { 
+    .timeline {
+      display: none;
+    }
+}
+
+/* Iphone X Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .timeline .entries .entry .body p {
+      line-height: 1.6em;
+    }
+
+    .timeline {
+      display: none;
+    }
+}
+
+`
+
+export const TimeLineMobile = styled.div`
+display: flex;
+width: 100%;
+justify-content: center;
+align-content: center;
+flex-direction: column;
+align-items: center;
+justify-items: center;
+
+
+@media only screen 
+  and (min-width: 1025px)  { 
+      display: none;
+}
+
+
+.entry{
+  display: flex;
+  width: 80%;
+  height: 50%;
+  background-color: transparent;
+}
+
+.year {
+  color: #FFF;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  background-color: transparent;
+
+  .circle {
+    height: 11px;
+    width: 11px; 
+    background-color: #C365EF;
+    border-radius: 20px;
+    margin-right: 5px;
+  }
+
+  .line{
+    height: 2.5rem;
+    width: 2.5px; 
+    background-color: #FFF;
+    margin-left: -40%;
+    margin-bottom: -100%;
+  }
+}
+
+
+.text {
+  color: #fff;
+  margin-left: 20px;
+  display: flex;
+  align-content: center;
+  align-items: center; 
+}
+
 
 `

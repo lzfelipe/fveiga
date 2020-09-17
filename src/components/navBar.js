@@ -34,7 +34,7 @@ export default class components extends Component {
                             {/* eslint-disable-next-line */}
                             <li><a href="#">resume</a></li>
                             {/* eslint-disable-next-line */}
-                            <li><a href="#">projecsts</a></li>
+                            <li><a href="#">projects</a></li>
                             {/* eslint-disable-next-line */}
                             <li><a href="#">contact me</a></li>
 
