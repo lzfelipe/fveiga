@@ -1,0 +1,86 @@
+.contact-main-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 10%;
+}
+
+.contact-title {
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display';
+    font-size:  5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-title span {
+    color: #C365EF;
+}
+
+.contact-title-wrapper {
+    padding-top: 5%;
+}
+
+.contact-main-wrapper form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-main-wrapper form label{
+    font-size: 20px;
+}
+
+.contact-main-wrapper form input{
+    height: 30px;
+    margin-top: 5px;
+    color: #fff;
+    margin-bottom: 15px;
+    background: rgba(59, 59, 59, 0.568);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-family: 'Red Hat Display';
+}
+
+.contact-main-wrapper form textarea{
+    height: 130px;
+    margin-top: 5px;
+    color: #fff;
+    margin-bottom: 15px;
+    background: rgba(59, 59, 59, 0.568);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-family: 'Red Hat Display';
+}
+
+@media (max-width: 1024px) {
+    .contact-title {
+          font-size:  2rem;
+          width: 100%;
+          justify-self: stretch;
+          
+     }
+
+     .contact-main-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 5%;
+    }
+
+    .contact-title-wrapper{
+        padding-top: 20%;
+        justify-self: center;
+    }
+
+    .contact-main-wrapper section {
+        justify-self: stretch;
+        margin-left: 17%;
+    }
+
+    .contact-main-wrapper form button{
+        width: 500%;
+    }
+
+  }

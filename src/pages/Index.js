@@ -11,9 +11,10 @@ import {
 } from "../styles/title";
 
 import behance from "../assets/social/behance.svg";
-import ig from "../assets/social/ig.svg";
+import ig from "../assets/social/git.png";
 import linkedn from "../assets/social/linkedin.svg";
 import Footer from "../components/footer";
+import {Link} from 'react-router-dom'
 
 class Index extends Component {
   render() {
@@ -28,7 +29,7 @@ class Index extends Component {
               javascript fullstack developer &#38; digital designer{" "}
             </SubTitle>
             <div>
-              <MainButton>see my projects</MainButton>
+              <Link to='/projects'><MainButton>see my projects</MainButton></Link>
             </div>
 
             <KnowMeText>
@@ -43,7 +44,7 @@ class Index extends Component {
                   professional timeline
                 </u>
               </Title>
-              <a style={{color: "#FFF", textDecoration: "underline", fontSize: 14 }} href="#">Download my resume PDF</a>
+              
             </div>
           </TitleContainer>
 

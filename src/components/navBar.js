@@ -4,6 +4,7 @@ import logoHorz from '../assets/logo_horz.svg'
 import behance from '../assets/social/behance.svg'
 import ig from '../assets/social/ig.svg'
 import linkedn from '../assets/social/linkedin.svg'
+import {Link} from 'react-router-dom'
 
 import { NavContainer, MenuWrap, Hamburger, Menu, MenuContainer, LogoBox, IconsContainer, DesktopMenuContainer } from '../styles/navBar';
 
@@ -12,7 +13,6 @@ export default class components extends Component {
     return (
       <NavContainer>
         <LogoBox>
-          {/* eslint-disable-next-line */}
           <a href="/fveiga">
             <img src={logo} alt="logo"></img>
           </a>
@@ -30,16 +30,10 @@ export default class components extends Component {
                     <div>
                         <img src={logoHorz} alt="logo"></img>
                         <ul>
-                            <li><a href="/fveiga">home</a></li>
-                            {/* eslint-disable-next-line */}
-                            <li><a href="#">resume</a></li>
-                            {/* eslint-disable-next-line */}
-                            <li><a href="#">projects</a></li>
-                            {/* eslint-disable-next-line */}
-                            <li><a href="#">contact me</a></li>
-
+                            <li><Link to="/">home</Link></li>
+                            <li><Link to="/projects">projects</Link></li>
+                            <li><Link to="/contact">contact me</Link></li>
                             <hr style={{marginLeft: '-28%'}}></hr>
-
                             <IconsContainer>
                                 <img src={linkedn} alt="logo"></img>
                                 <img src={ig} alt="logo"></img>
@@ -50,19 +44,14 @@ export default class components extends Component {
                 </MenuContainer>
             </Menu>
         </MenuWrap>
+
+
         {/* Menu Desktop */}
         <DesktopMenuContainer>
           <ul>
-            {/* eslint-disable-next-line */}
-            <li><a href="/fveiga">home</a></li>
-            {/* eslint-disable-next-line */}
-            <li><a href="#">resume</a></li>
-            {/* eslint-disable-next-line */}
-            <li><a href="#">projects</a></li>
-            {/* eslint-disable-next-line */}
-            <li><a href="#">contact me</a></li>
-            {/* eslint-disable-next-line */}
-            <li>EN_PT</li>
+            <li><Link to="/">home</Link></li>
+            <li><Link to="/projects">projects</Link></li>
+            <li><Link to="/contact">contact me</Link></li>
           </ul>
         </DesktopMenuContainer>
         

@@ -41,6 +41,16 @@ span {
     margin-top: 7vh;
     font-size:  10vw;
 }
+
+.projects-title {
+  font-size:  10vw;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 7vh;
+    font-size:  10vw;
+  }
+}
+
 `
 
 export const SubTitle = styled.h3`
