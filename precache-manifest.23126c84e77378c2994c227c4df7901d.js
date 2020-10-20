@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8ea0659b7fc85365f583c6751c6b1dbb",
+    "revision": "c9628701d83c903392b15e8c3bfb9e94",
     "url": "/fveiga/index.html"
   },
   {
-    "revision": "f558607d31e29c54983a",
-    "url": "/fveiga/static/css/main.dab91ced.chunk.css"
+    "revision": "dcfbc3cc6e523956f742",
+    "url": "/fveiga/static/css/main.260f81ae.chunk.css"
   },
   {
-    "revision": "c38d5dda97e6dab05ab7",
-    "url": "/fveiga/static/js/2.8da93f4a.chunk.js"
+    "revision": "59319ccf7dbb8e6c444f",
+    "url": "/fveiga/static/js/2.850feecb.chunk.js"
   },
   {
     "revision": "216e537bacc64f9dbaabd26649a9ab95",
-    "url": "/fveiga/static/js/2.8da93f4a.chunk.js.LICENSE.txt"
+    "url": "/fveiga/static/js/2.850feecb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f558607d31e29c54983a",
-    "url": "/fveiga/static/js/main.8cdc8120.chunk.js"
+    "revision": "dcfbc3cc6e523956f742",
+    "url": "/fveiga/static/js/main.6bfec548.chunk.js"
   },
   {
     "revision": "e417861c25e17938ca05",
@@ -30,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d19bbdb4c119b7d984414179907a58d1",
     "url": "/fveiga/static/media/git.d19bbdb4.png"
-  },
-  {
-    "revision": "c4b29dd2f7e5a0252abad259a229139e",
-    "url": "/fveiga/static/media/ig.c4b29dd2.svg"
   },
   {
     "revision": "2013c919bf335ba94dedc12d4175823b",
