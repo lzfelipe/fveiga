@@ -1,0 +1,19 @@
+.title {
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display';
+    font-size:  5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    color: #fff;
+}
+
+
+.title-wrapper {
+    padding-top: 5%;
+}
+
+.title span {
+    color: #C365EF;
+}

@@ -3,6 +3,7 @@ import React from 'react'
 import App from './App'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
+import Index2 from './pages/Index2'
 
 
 function Router(){
@@ -20,6 +21,8 @@ function Router(){
             <Switch>
                 <Route path='/' component={App} exact/>
                 <Route path='/fveiga' component={App} exact/>
+
+                <Route path='/index2' component={Index2} exact/>
 
                 <Route path='/projects' component={Projects} />
                 <Route path='/contact' component={Contact} />

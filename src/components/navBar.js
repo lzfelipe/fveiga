@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import logo from '../assets/logo.svg'
 import logoHorz from '../assets/logo_horz.svg'
 import behance from '../assets/social/behance.svg'
-import ig from '../assets/social/ig.svg'
+import ig from '../assets/social/git.png'
 import linkedn from '../assets/social/linkedin.svg'
 import {Link} from 'react-router-dom'
 
@@ -35,9 +35,10 @@ export default class components extends Component {
                             <li><Link to="/contact">contact me</Link></li>
                             <hr style={{marginLeft: '-28%'}}></hr>
                             <IconsContainer>
-                                <img src={linkedn} alt="logo"></img>
-                                <img src={ig} alt="logo"></img>
                                 <img src={behance} alt="logo"></img>
+                                <img src={ig} alt="logo"></img>
+                                <img src={linkedn} alt="logo"></img>
+                                
                             </IconsContainer>
                         </ul>
                     </div>
