@@ -1,19 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cf42447e5357e9d7462a793a29b6b664",
+    "revision": "8ea0659b7fc85365f583c6751c6b1dbb",
     "url": "/fveiga/index.html"
   },
   {
-    "revision": "5492788650ddab702ec4",
-    "url": "/fveiga/static/js/2.261f6be9.chunk.js"
+    "revision": "f558607d31e29c54983a",
+    "url": "/fveiga/static/css/main.dab91ced.chunk.css"
+  },
+  {
+    "revision": "c38d5dda97e6dab05ab7",
+    "url": "/fveiga/static/js/2.8da93f4a.chunk.js"
   },
   {
     "revision": "216e537bacc64f9dbaabd26649a9ab95",
-    "url": "/fveiga/static/js/2.261f6be9.chunk.js.LICENSE.txt"
+    "url": "/fveiga/static/js/2.8da93f4a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e69c2fa294470087390b",
-    "url": "/fveiga/static/js/main.f6348a7c.chunk.js"
+    "revision": "f558607d31e29c54983a",
+    "url": "/fveiga/static/js/main.8cdc8120.chunk.js"
   },
   {
     "revision": "e417861c25e17938ca05",
@@ -24,8 +28,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fveiga/static/media/behance.30ead64f.svg"
   },
   {
+    "revision": "d19bbdb4c119b7d984414179907a58d1",
+    "url": "/fveiga/static/media/git.d19bbdb4.png"
+  },
+  {
     "revision": "c4b29dd2f7e5a0252abad259a229139e",
     "url": "/fveiga/static/media/ig.c4b29dd2.svg"
+  },
+  {
+    "revision": "2013c919bf335ba94dedc12d4175823b",
+    "url": "/fveiga/static/media/inconsciente.2013c919.png"
   },
   {
     "revision": "56a42ddf53d307de442abfd890dcb826",
