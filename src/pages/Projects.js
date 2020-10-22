@@ -20,12 +20,12 @@ function Index2() {
 
         <>
           
-            <div style={{ height: "100vh" }}>
-              <div className="projecs-title-wrapper">
+            <div style={{ height: "100vh", paddingTop: 20 }}>
+              <Container className="projecs-title-wrapper">
                 <h1 className="projects-title" style={{ marginBottom: 20 }}>
                   My latest projects<span>.</span>
                 </h1>
-              </div>
+              </Container>
               <motion.div
                 animate={{ x: "0vh", opacity: 1 }}
                 initial={{ x: "-30vw", opacity: 0 }}

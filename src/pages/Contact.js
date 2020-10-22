@@ -54,7 +54,7 @@ function Contact() {
         </div>
         </motion.div >
 
-        <div style={{width: '100%', position: "relative", bottom: 0}}>
+        <div style={{width: '100%', position: "relative", bottom: 0}} className="contact-footer">
             <Footer />
         </div> 
 
