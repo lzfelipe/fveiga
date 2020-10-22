@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/fveiga/static/css/main.260f81ae.chunk.css",
-    "main.js": "/fveiga/static/js/main.6bfec548.chunk.js",
-    "main.js.map": "/fveiga/static/js/main.6bfec548.chunk.js.map",
+    "main.css": "/fveiga/static/css/main.50cc5fe6.chunk.css",
+    "main.js": "/fveiga/static/js/main.13351895.chunk.js",
+    "main.js.map": "/fveiga/static/js/main.13351895.chunk.js.map",
     "runtime-main.js": "/fveiga/static/js/runtime-main.a04a4230.js",
     "runtime-main.js.map": "/fveiga/static/js/runtime-main.a04a4230.js.map",
     "static/js/2.850feecb.chunk.js": "/fveiga/static/js/2.850feecb.chunk.js",
     "static/js/2.850feecb.chunk.js.map": "/fveiga/static/js/2.850feecb.chunk.js.map",
     "index.html": "/fveiga/index.html",
-    "precache-manifest.23126c84e77378c2994c227c4df7901d.js": "/fveiga/precache-manifest.23126c84e77378c2994c227c4df7901d.js",
+    "precache-manifest.c42a530c3a266c54f4a5c0ab6898b17c.js": "/fveiga/precache-manifest.c42a530c3a266c54f4a5c0ab6898b17c.js",
     "service-worker.js": "/fveiga/service-worker.js",
-    "static/css/main.260f81ae.chunk.css.map": "/fveiga/static/css/main.260f81ae.chunk.css.map",
+    "static/css/main.50cc5fe6.chunk.css.map": "/fveiga/static/css/main.50cc5fe6.chunk.css.map",
     "static/js/2.850feecb.chunk.js.LICENSE.txt": "/fveiga/static/js/2.850feecb.chunk.js.LICENSE.txt",
     "static/media/behance.svg": "/fveiga/static/media/behance.30ead64f.svg",
     "static/media/git.png": "/fveiga/static/media/git.d19bbdb4.png",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.a04a4230.js",
     "static/js/2.850feecb.chunk.js",
-    "static/css/main.260f81ae.chunk.css",
-    "static/js/main.6bfec548.chunk.js"
+    "static/css/main.50cc5fe6.chunk.css",
+    "static/js/main.13351895.chunk.js"
   ]
 }
