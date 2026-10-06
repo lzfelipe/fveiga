@@ -16,8 +16,16 @@ export const NavContainer = styled.div`
         
 `
 
-export const LogoBox = styled.div` 
+export const LogoBox = styled.div`
         margin-left: 20px;
+
+        a {
+            display: inline-flex;
+            transition: opacity .2s;
+        }
+        a:hover {
+            opacity: .8;
+        }
 
     @media screen and (min-width: 1024px) {
         margin-left: 50px;
@@ -74,6 +82,10 @@ export const Menu = styled.div`
         color: inherit;
         text-decoration: none;
         transition: color 0.4s ease;
+    }
+
+    ${MenuContainer} > div > ul > li > a:hover {
+        color: var(--accent);
     }
 `
 
@@ -176,6 +188,10 @@ export const IconsContainer = styled.div`
     img {
         margin-top: 20px;
         height: 30px;
+        transition: transform .2s;
+    }
+    a:hover img {
+        transform: scale(1.1);
     }
 `
 
@@ -219,10 +235,21 @@ export const DesktopMenuContainer = styled.div`
         -webkit-transition: width .2s ease;
     }
 
-    ul > li > a:hover:after {
+    ul > li > a:hover:after,
+    ul > li > a.active:after {
         width: 60%;
         left: 0;
         background: #C365EF;
+    }
+
+    ul > li > a {
+        opacity: .85;
+        transition: opacity .2s;
+    }
+
+    ul > li > a:hover,
+    ul > li > a.active {
+        opacity: 1;
     }
       
 `

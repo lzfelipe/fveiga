@@ -1,28 +1,25 @@
-import React, { Component } from "react";
+import React from "react";
 import logo from '../assets/logo.svg'
 import logoHorz from '../assets/logo_horz.svg'
-import behance from '../assets/social/behance.svg'
-import ig from '../assets/social/git.png'
-import linkedn from '../assets/social/linkedin.svg'
-import {Link} from 'react-router-dom'
+import socialLinks from './socialLinks'
+import { Link, NavLink } from 'react-router-dom'
 
 import { NavContainer, MenuWrap, Hamburger, Menu, MenuContainer, LogoBox, IconsContainer, DesktopMenuContainer } from '../styles/navBar';
 
-export default class components extends Component {
-  render() {
+export default function NavBar() {
     return (
       <NavContainer>
         <LogoBox>
-          <a href="/fveiga">
+          <Link to="/" aria-label="Felipe Veiga — home">
             <img src={logo} alt="logo"></img>
-          </a>
+          </Link>
         </LogoBox>
 
 
         {/* Menu Mobile */}
         <MenuWrap>
-            <input type="checkbox"/>
-            <Hamburger> 
+            <input type="checkbox" aria-label="Open menu"/>
+            <Hamburger>
                 <div />
             </Hamburger>
             <Menu>
@@ -35,10 +32,11 @@ export default class components extends Component {
                             <li><Link to="/contact">contact me</Link></li>
                             <hr style={{marginLeft: '-28%'}}></hr>
                             <IconsContainer>
-                                <img src={behance} alt="logo"></img>
-                                <img src={ig} alt="logo"></img>
-                                <img src={linkedn} alt="logo"></img>
-                                
+                                {socialLinks.map(({ name, href, icon }) => (
+                                    <a key={name} href={href} target="_blank" rel="noopener noreferrer" aria-label={name}>
+                                        <img src={icon} alt={name}></img>
+                                    </a>
+                                ))}
                             </IconsContainer>
                         </ul>
                     </div>
@@ -47,16 +45,15 @@ export default class components extends Component {
         </MenuWrap>
 
 
-        {/* Menu Desktop */}
+        {/* Menu Desktop — NavLink adds the "active" class used to keep the current page underlined */}
         <DesktopMenuContainer>
           <ul>
-            <li><Link to="/">home</Link></li>
-            <li><Link to="/projects">projects</Link></li>
-            <li><Link to="/contact">contact me</Link></li>
+            <li><NavLink to="/" end>home</NavLink></li>
+            <li><NavLink to="/projects">projects</NavLink></li>
+            <li><NavLink to="/contact">contact me</NavLink></li>
           </ul>
         </DesktopMenuContainer>
-        
+
       </NavContainer>
     );
-  }
 }

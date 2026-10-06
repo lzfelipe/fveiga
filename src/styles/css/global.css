@@ -1,0 +1,61 @@
+:root {
+    --menu-speed: 0.75s;
+
+    --bg: #18161D;
+    --surface: #34303C;
+    --surface-soft: rgba(59, 59, 59, 0.568);
+    --accent: #C365EF;
+    --accent-dark: #7f4d96;
+    --accent-glow: rgba(195, 101, 239, 0.35);
+    --text: #fff;
+    --text-muted: #aaa;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Red Hat Display', sans-serif;
+    overflow-x: hidden;
+    max-width: 100vw;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Form controls don't inherit the page font by default */
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+*::selection {
+    background-color: var(--accent);
+    color: white;
+}
+
+/* Visible keyboard focus everywhere, without showing rings on mouse clicks */
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}
