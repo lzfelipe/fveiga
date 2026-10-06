@@ -1,12 +1,18 @@
+.projects-page {
+    min-height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
 .projects-title {
     padding: 0;
     margin: 0;
     font-family: 'Red Hat Display';
     font-size:  5rem;
     font-weight: bold;
+    letter-spacing: -1px;
     color: #fff;
     text-align: center;
-    color: #fff;
 }
 
 .projecs-title-wrapper {
@@ -14,43 +20,53 @@
 }
 
 .projects-title span {
-    color: #C365EF;
+    color: var(--accent);
 }
 
-.projects-wrapper {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
+/* 3 columns on large screens, 1 column below 992px (same breakpoints the old grid lib used) */
 .projects-list {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 992px) {
+    .projects-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .projects-list li {
-    justify-self: center;
-    justify-content: center;
-    justify-items: center;
     display: flex;
+    justify-content: center;
     padding: 0;
     margin: 0;
-    margin: 10px 0px 10px 0px;
-    background: transparent;
-    border-radius: 10px;
-    
+    border-radius: 12px;
 }
 
 .projects-list li img {
+    display: block;
     background-color: rgba(43, 43, 43, 0.473);
     width: 320px;
     height: 320px;
+    max-width: 100%;
     object-position: center;
-    object-fit: contain; 
-    border-radius: 10px;
+    object-fit: contain;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
+.projects-list li:hover img {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45), 0 0 0 4px var(--accent-glow);
 }
 
 @media (max-width: 1024px) {
@@ -61,6 +77,4 @@
    .projecs-title-wrapper{
         padding-top: 20%
     }
-
-
 }

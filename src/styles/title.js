@@ -75,18 +75,26 @@ text-align: center;
 export const MainButton = styled.button`
  font-size: 16px;
  color: #fff;
- background-color: #C365EF;
+ background-color: var(--accent);
  border: none;
  border-radius: 11px;
  padding: 10px 35px ;
- font-weight: bold;
- transition: background 0.5s, transform .2s;
+ font-weight: 700;
+ letter-spacing: .2px;
+ cursor: pointer;
+ box-shadow: 0 4px 14px var(--accent-glow);
+ transition: background 0.3s, transform .2s, box-shadow .2s;
 
 
-:hover {
-    background-color: #7f4d96;
-    transform: scale(1.1);
-    cursor: pointer;
+&:hover {
+    background-color: var(--accent-dark);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 8px 22px var(--accent-glow);
+}
+
+&:active {
+    transform: translateY(0) scale(.98);
+    box-shadow: 0 2px 8px var(--accent-glow);
 }
 `
 
@@ -99,18 +107,17 @@ export const SocialIconsDesktop = styled.div`
 }
 
     div > div > a > img {
-        padding: 5px;
-        transition: background 0.5s, transform .4s;
+        padding: 6px;
+        transition: background 0.3s, transform .3s, box-shadow .3s;
         border-radius: 40%;
     }
-    
-    div > div > a > img:hover{
-        background: #C365EF;
-        transform: scale(1.3);
+
+    div > div > a:hover > img,
+    div > div > a:focus-visible > img {
+        background: var(--accent);
+        transform: scale(1.25);
+        box-shadow: 0 4px 14px var(--accent-glow);
     }
-
-    
-
 `
 
 
@@ -134,7 +141,8 @@ export const KnowMeText = styled.div`
 h2 {
     color: #aaa;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 400;
+    letter-spacing: 1px;
     writing-mode: vertical-rl;
     transition: color 0.3s, font-size .3s;
 }
@@ -143,6 +151,21 @@ h2:hover {
     color: #FFF;
     font-size: 18px;
     cursor: pointer;
+}
+
+/* The "Know me" hint is a link that smoothly scrolls down to the timeline */
+a {
+    text-decoration: none;
+    animation: knowMeNudge 2.4s ease-in-out infinite;
+}
+
+@keyframes knowMeNudge {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    a { animation: none; }
 }
 
 
@@ -158,14 +181,15 @@ height: fit-content;
 
 .timeline {
  margin: 0;
- font-family: 'Red Hat', sans-serif;
+ font-family: 'Red Hat Display', sans-serif;
 
 }
 
 .timeline:before {
   content: '';
   border-left: 2px solid white;
-  min-height: 33em;
+  /* tall enough to reach the last (big) dot */
+  min-height: 34em;
   position: absolute;
   margin-top: 30px;
 }
@@ -196,6 +220,7 @@ height: fit-content;
 }
 .timeline  .entries .entry .title {
   font-size: 32px;
+  font-weight: 700;
   margin-bottom: 12px;
   position: relative;
   color: #fff;
@@ -221,7 +246,7 @@ height: fit-content;
           transform: translate(8px, -50%);
 }
 .timeline .entries .entry .body {
-  color: #fff;
+  color: rgba(255, 255, 255, .85);
 }
 .timeline .entries .entry .body p {
   line-height: 1.4em;

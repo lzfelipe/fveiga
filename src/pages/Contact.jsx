@@ -16,10 +16,10 @@ function Contact() {
         </div>
 
 
-        <motion.div  animate={{x: '0vh', opacity: 1}} initial={{x: '-30vw', opacity: 0}} transition={{duration: 1}}>
+        <motion.div  animate={{x: '0vh', opacity: 1}} initial={{x: '-30vw', opacity: 0}} transition={{duration: 1, ease: 'easeOut'}}>
 
 
-        <div style={{height: '100vh'}}>
+        <div className="contact-page">
 
             <div className="contact-main-wrapper">
 
@@ -31,16 +31,16 @@ function Contact() {
 
                 <section className="form-wrapper">
                     <form>
-                        <label htmlFor="name" style={{color: "#fff"}}>Name</label>
-                        <input name="name" maxLength={80}/>
+                        <label htmlFor="name">Name</label>
+                        <input id="name" name="name" autoComplete="name" maxLength={80}/>
 
-                        <label htmlFor="email" style={{color: "#fff"}}>Email</label>
-                        <input name="email" type="email"  maxLength={100} />
+                        <label htmlFor="email">Email</label>
+                        <input id="email" name="email" type="email" autoComplete="email" maxLength={100} />
 
-                        <label htmlFor="message" style={{color: "#fff"}}>Message</label>
-                        <textarea name="message" maxLength={500}></textarea>
+                        <label htmlFor="message">Message</label>
+                        <textarea id="message" name="message" maxLength={500}></textarea>
 
-                        <div style={{width: '20%', marginTop: 20}}>
+                        <div className="form-actions">
                         <MainButton>send</MainButton>
                         </div>
                     </form>

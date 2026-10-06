@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   SubTitle,
   Title,
@@ -10,14 +10,17 @@ import {
   TimeLineMobile
 } from "../styles/title";
 
-import behance from "../assets/social/behance.svg";
-import ig from "../assets/social/git.png";
-import linkedn from "../assets/social/linkedin.svg";
+import socialLinks from "../components/socialLinks";
 import Footer from "../components/footer";
 import {Link} from 'react-router-dom'
 
-class Index extends Component {
-  render() {
+// Smoothly scrolls to the timeline instead of jumping (and keeps the URL free of "#timeline")
+const scrollToTimeline = (event) => {
+  event.preventDefault();
+  document.getElementById("timeline")?.scrollIntoView({ behavior: "smooth" });
+};
+
+function Index() {
     return (
       <div>
         <div style={{ display: "flex", width: "100%", justifyContent: "center", textAlign: "center" }} >
@@ -33,7 +36,9 @@ class Index extends Component {
             </div>
 
             <KnowMeText>
-              <h2>Know me &#8594;</h2>
+              <a href="#timeline" onClick={scrollToTimeline}>
+                <h2>Know me &#8594;</h2>
+              </a>
             </KnowMeText>
 
             <div style={{ width: "100%", display: "block" }}>
@@ -51,29 +56,11 @@ class Index extends Component {
           <SocialIconsDesktop>
             <div style={styles.socialContainer}>
               <div style={styles.socialWrapper}>
-                <a
-                  href="https://www.behance.net/lzfelipevs3c78"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={behance} alt="behance" width="20" />
-                </a>
-
-                <a
-                  href="https://github.com/lzfelipe"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={ig} alt="ig" width="20"></img>
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/in/luiz-felipe-veiga-de-siqueira-a91491181/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={linkedn} alt="linkedn" width="20"></img>
-                </a>
+                {socialLinks.map(({ name, href, icon }) => (
+                  <a key={name} href={href} target="_blank" rel="noopener noreferrer" aria-label={name}>
+                    <img src={icon} alt={name} width="20" />
+                  </a>
+                ))}
               </div>
             </div>
           </SocialIconsDesktop>
@@ -84,41 +71,41 @@ class Index extends Component {
             <Timeline>
                 <div className="timeline">
 
-                    <div class="entries">
-                        <div class="entry">
-                            <div class="title">2014</div>
-                            <div class="body">
+                    <div className="entries">
+                        <div className="entry">
+                            <div className="title">2014</div>
+                            <div className="body">
                         <p>Entered an IT technical course at Colégio Anchieta</p>
                             </div>
                         </div>
-                        <div class="entry">
-                            <div class="title">2015</div>
-                            <div class="body">
+                        <div className="entry">
+                            <div className="title">2015</div>
+                            <div className="body">
                             <p>Started working as a Freelancer</p>
                             </div>
                         </div>
-                        <div class="entry">
-                            <div class="title">2016</div>
-                            <div class="body">
+                        <div className="entry">
+                            <div className="title">2016</div>
+                            <div className="body">
                             <p>Finished my IT course</p>
                             </div>
                         </div>
                         
-                        <div class="entry">
-                            <div class="title">2016</div>
-                            <div class="body">
+                        <div className="entry">
+                            <div className="title">2016</div>
+                            <div className="body">
                             <p>Started working as a Teacher/Monitor at Eurodata </p>
                             </div>
                         </div>
-                        <div class="entry">
-                            <div class="title">2017</div>
-                            <div class="body">
+                        <div className="entry">
+                            <div className="title">2017</div>
+                            <div className="body">
                             <p>Departure from Eurodata</p>
                             </div>
                         </div>
-                        <div class="entry">
-                            <div class="title big">2017</div>
-                            <div class="body">
+                        <div className="entry">
+                            <div className="title big">2017</div>
+                            <div className="body">
                             <p>Joined my bachelor’s
                             degree in Digital Design
                             at Anhembi Morumbi.</p>
@@ -221,7 +208,6 @@ class Index extends Component {
         <Footer />
       </div>
     );
-  }
 }
 
 //Passar socialContainer e SocialWrapper para styled components para usar mediaQuerries dps <--- @@@important
